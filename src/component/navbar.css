@@ -1,0 +1,125 @@
+*{  
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.main-nav {    
+    text-align: end;  
+    padding-right: 40px;   
+    font-size: large;   
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:0;
+    right:10px;   
+}
+
+
+
+.menu-link{
+    justify-content: space-between;
+}
+
+.menu-link-hide{
+    display: none;
+    visibility: hidden;
+}
+
+.social-media{
+    display: flex;
+    padding-right: 40px;
+    justify-content: space-between;
+    width:10%;
+    margin-left: 20%;
+   cursor: pointer;
+
+
+}
+.hamburger-menu{
+    display: none;
+    visibility: hidden;
+   
+}
+.menu-link  .hamburger-menu {
+    display: none;
+    visibility: hidden;    
+}
+
+@media(max-width:425px){
+    
+    .main-div1{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width:80%;         
+        align-items: center;      
+    }
+
+    .mobile-menu-link{
+        display: none;
+        visibility: hidden;
+        
+    } 
+    .social-media{
+        height: 0;
+        display: none;        
+    }
+    .hamburger-menu,.menu-link {
+        visibility: visible;
+        display: flex;
+        margin-left: 10px;   
+             
+    } 
+    .menu-link{
+        background-color: darkcyan;     
+    }    
+    .home,.container,.bio,.blog,.contect{
+        margin-top: 120px;  
+        width: 50%;
+        margin-left: 5%;
+    }
+
+}
+@media(max-width:768px){
+    
+    .main-div1{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width:80%;             
+        align-items: center;      
+    }
+
+    .mobile-menu-link{
+        display: none;
+        visibility: hidden;
+        
+    } 
+    .social-media{
+        height: 0;
+        display: none;        
+    }
+    .hamburger-menu,.menu-link {
+        visibility: visible;
+        display: flex;
+        margin-left: 10px;   
+             
+    } 
+    .menu-link{
+        background-color: darkcyan;     
+    }    
+    .home,.container,.bio,.blog,.contect{
+        margin-top: 120px;  
+        width: 50%;
+        margin-left: 5%;
+    }
+
+}
+
+
